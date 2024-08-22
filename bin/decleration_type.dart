@@ -10,11 +10,20 @@ void main(List<String> arguments) {
   print('type of d is ${d.runtimeType}');
   var delegate = SilverChildernListBuilderDelegate();
 
-  // Dynamic type
+  // Dynamic type decleration
   dynamic e = 2;
   print('value of e : $e');
   e = 'Ali';
   print("Now value of e is : $e and its Type is ${e.runtimeType}");
+
+  // Constant Strict type decleration
+  const int f = 10; // Compile time Constant
+  final SilverChildernListBuilderDelegate s =
+      SilverChildernListBuilderDelegate(); // Runtime Constant
+
+  //constant type inferance
+  const g = 200;
+  final h = SilverChildernListBuilderDelegate();
 }
 
 class SilverChildernListBuilderDelegate {}
